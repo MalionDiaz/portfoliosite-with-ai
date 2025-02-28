@@ -408,18 +408,6 @@ footer {
     }
 }
 
-/* スクロールアニメーション */
-.scroll-animation {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.scrolled {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* ハンバーガーメニューのアニメーション */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -727,21 +715,28 @@ footer {
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
+    /* フォントサブセットの使用を検討 */
+    /* font-display: swap; を追加してフォント読み込み中の表示を改善 */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font/OTF/Ranade-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
+    src: url('font/OTF/Ranade-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
+    src: url('font/OTF/Ranade-MediumItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 } 
