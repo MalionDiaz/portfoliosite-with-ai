@@ -32,8 +32,12 @@ class Particle {
     }
 
     attractTo(targetX, targetY) {
-        let forceX = (targetX - this.x) * 0.005;
-        let forceY = (targetY - this.y) * 0.005;
+        let dx = targetX - this.x;
+        let dy = targetY - this.y;
+        let distance = sqrt(dx * dx + dy * dy);
+        let force = constrain(1 / (distance * 0.1), 0, 0.05); // 距離に応じた力の調整
+        let forceX = dx * force;
+        let forceY = dy * force;
         this.vx += forceX;
         this.vy += forceY;
     }
@@ -43,6 +47,8 @@ class Particle {
         this.y += this.vy;
         this.vx *= 0.95; // 摩擦をシミュレート
         this.vy *= 0.95; // 摩擦をシミュレート
+        this.vx += random(-0.1, 0.1); // ランダムな動きを追加
+        this.vy += random(-0.1, 0.1); // ランダムな動きを追加
     }
 
     show() {
