@@ -3,7 +3,7 @@ let particles = [];
 function setup() {
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('p5-background');
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 150; i++) {
         particles.push(new Particle());
     }
 }
@@ -32,8 +32,8 @@ class Particle {
     }
 
     attractTo(targetX, targetY) {
-        let forceX = (targetX - this.x) * 0.01;
-        let forceY = (targetY - this.y) * 0.01;
+        let forceX = (targetX - this.x) * 0.005;
+        let forceY = (targetY - this.y) * 0.005;
         this.vx += forceX;
         this.vy += forceY;
     }
