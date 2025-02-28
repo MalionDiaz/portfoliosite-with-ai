@@ -727,21 +727,21 @@ footer {
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Bold.otf') format('opentype');
+    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Bold.otf') format('opentype');
+    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('font/OTF/Ranade-Bold.otf') format('opentype');
+    src: url('font/OTF/Ranade-Medium.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 } 
