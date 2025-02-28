@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="私の作品一覧です。これまでに手がけたプロジェクトを紹介しています。">
+    <title>ポートフォリオ | 作品一覧</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">ポートフォリオ</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">自己紹介</a></li>
+                <li><a href="portfolio.html">作品</a></li>
+                <li><a href="blog/index.html">ブログ</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-hero scroll-animation">
+            <h1>作品一覧</h1>
+            <p>これまでに手がけたプロジェクトを紹介します。</p>
+        </section>
+
+        <section class="portfolio-filter scroll-animation">
+            <ul class="filter-buttons">
+                <li class="active" data-filter="all">すべて</li>
+                <li data-filter="web">ウェブサイト</li>
+                <li data-filter="app">アプリ</li>
+                <li data-filter="design">デザイン</li>
+            </ul>
+        </section>
+
+        <section class="portfolio-grid scroll-animation">
+            <div class="project-item" id="project1" data-category="web">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト1">
+                <div class="project-info">
+                    <h3>プロジェクト1</h3>
+                    <p>ウェブサイト制作</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+            <div class="project-item" data-category="app">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト2">
+                <div class="project-info">
+                    <h3>プロジェクト2</h3>
+                    <p>モバイルアプリ開発</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+            <div class="project-item" data-category="design">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト3">
+                <div class="project-info">
+                    <h3>プロジェクト3</h3>
+                    <p>ロゴデザイン</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+            <div class="project-item" data-category="web">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト4">
+                <div class="project-info">
+                    <h3>プロジェクト4</h3>
+                    <p>ECサイト構築</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+            <div class="project-item" data-category="app">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト5">
+                <div class="project-info">
+                    <h3>プロジェクト5</h3>
+                    <p>ウェブアプリケーション</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+            <div class="project-item" data-category="design">
+                <img src="https://via.placeholder.com/600x400" alt="プロジェクト6">
+                <div class="project-info">
+                    <h3>プロジェクト6</h3>
+                    <p>UIデザイン</p>
+                    <a href="#" class="btn-small">詳細を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>連絡先</h3>
+                <p>Email: example@example.com</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>サイトマップ</h3>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="portfolio.html">作品</a></li>
+                    <li><a href="blog/index.html">ブログ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 ポートフォリオサイト. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
