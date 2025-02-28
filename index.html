@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="私のポートフォリオサイトです。プロジェクトやブログを掲載しています。">
+    <meta name="description" content="インタラクティブなポートフォリオサイト">
     <title>ポートフォリオ | ホーム</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
 </head>
 <body>
     <header>
@@ -28,10 +29,11 @@
     </header>
 
     <main>
+        <div id="p5-background"></div>
         <section class="hero">
             <div class="hero-content">
-                <h1>こんにちは、私の名前は〇〇です</h1>
-                <p>ウェブ開発者 / デザイナー / ブロガー</p>
+                <h1>インタラクティブな背景で遊ぼう</h1>
+                <p>カーソルを動かして背景を操作してみてください。</p>
                 <a href="about.html" class="btn">詳しく見る</a>
             </div>
         </section>
@@ -95,5 +97,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/sketch.js"></script>
 </body>
 </html> 

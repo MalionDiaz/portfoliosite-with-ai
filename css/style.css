@@ -116,13 +116,11 @@ h1, h2, h3 {
 
 /* ヒーローセクション */
 .hero {
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: 1;
     text-align: center;
-    background-color: #f0f0f0;
-    margin-bottom: 4rem;
+    padding: 10rem 0;
+    color: #fff;
 }
 
 .hero-content h1 {
@@ -342,4 +340,13 @@ footer {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+#p5-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 } 
